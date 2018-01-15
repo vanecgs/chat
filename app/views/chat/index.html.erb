@@ -1,0 +1,7 @@
+<h1>Hello, Rails!</h1>
+<% if logged_in? %>
+  <%= link_to 'Chat', messages_path, class: 'btn btn-lg btn-primary' %>
+<% else %>
+  <%= link_to "Log in", login_path, class: 'btn btn-lg btn-primary' %>
+  <%= link_to 'Sign up now!', users_new_path, class: 'btn btn-lg btn-secondary' %>
+<% end %>
